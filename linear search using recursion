@@ -1,0 +1,11 @@
+#linear search using recursion
+def linear(l,target,ind = 0):
+    if ind == len(l):
+        return -1
+    if l[ind] == target:
+        return ind
+    return(linear(l,target,ind+1))
+l = []
+l = [10,12,11,35,10,23,11]
+target = 11
+print(linear(l,target))
