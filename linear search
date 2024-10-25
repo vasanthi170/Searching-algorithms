@@ -1,0 +1,9 @@
+#linear search
+l  = [12,11,35,10,23,11]
+target = 11
+for ind in range(len(l)):
+    if l[ind] == target:
+        print(ind)
+        break
+else:
+    print(-1)
