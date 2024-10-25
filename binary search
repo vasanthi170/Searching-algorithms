@@ -1,0 +1,16 @@
+#binary search
+l = [12,24,38,45,99,126]
+target = 38
+low    = 0
+high   = len(l)-1
+while low <= high and l[low] <= target <= l[high]:
+    mid = (low+high)//2
+    if l[mid] > target:
+        high = mid-1
+    elif l[mid] < target:
+        low = mid+1
+    elif l[mid] == target:
+        print(mid)
+        break
+else:
+    print(-1)
